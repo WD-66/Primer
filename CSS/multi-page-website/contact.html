@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Golden Coffee Bean</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About us</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Contact us</h1>
+    </header>
+
+    <main>
+      <address>
+        <ul>
+          <li>Phone: <a href="tel:+01234567890">+01234567890</a></li>
+          <li>Mail: <a href="mailto:test@mctesty.com">test@mctesty.com</a></li>
+        </ul>
+      </address>
+
+      <form method="get" action="#" class="contact">
+        <fieldset>
+          <legend>Leave a message with us</legend>
+          <label class="contact-label" for="name">Name</label>
+          <input class="contact-input" type="text" id="name" name="name" required>
+          <br>
+          <label class="contact-label" for="email">Email</label>
+          <input class="contact-input" type="email" id="email" name="email">
+          <br>
+          <label class="contact-label" for="message">Message</label>
+          <textarea class="contact-input" name="message" id="message" cols="30" rows="10" maxlength="2"></textarea>
+          <br>
+          <div>
+            <button class="btn btn-contact">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      &copy; &apos;25 - Made with and for ☕
+    </footer>
+  </body>
+
+</html>

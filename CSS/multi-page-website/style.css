@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2e2220;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+/* @media screen and (max-width: 600px) {
+  body {
+    background-color: rebeccapurple;
+  }
+} */
+
+@media (400px < width < 800px) {
+  body {
+    background-color: navy;
+  }
+}
+
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+}
+
+header {
+  /* margin: 10px 50px 1px 4px; */
+  /* margin-bottom: 20px; */
+  margin-block: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+p {
+  max-width: 80ch;
+}
+
+section {
+  /* margin-block: 1rem; */
+  margin-bottom: 1rem;
+}
+
+.contact {
+  margin: 3rem;
+  max-width: fit-content;
+}
+
+.contact fieldset {
+  padding: 1rem;
+  /* text-align: right; */
+}
+
+.contact fieldset div {
+  text-align: right;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 7rem;
+  height: 3rem;
+
+  @media (width < 501px) {
+    height: 5px;
+  }
+}
+
+.contact-input {
+  width: 15rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid brown;
+  /* border-style: dotted; */
+  border-radius: 2px;
+
+  @media (width < 501px) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 
+@media (width < 501px) {
+  .contact-input {
+    margin-bottom: 0.5rem;
+  }
+  .contact-label {
+    height: 5px;
+  }
+} */
+
+.contact-input:focus-visible {
+  outline-color: red;
+}
+
+.btn {
+  padding: 0.25rem 0.75rem;
+  color: inherit;
+  font: inherit;
+  background-color: #1e1715;
+}
+
+.btn-contact {
+  /* margin-left: 18rem; */
+}
